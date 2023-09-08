@@ -61,10 +61,10 @@ if is_aim_available():
 
     _available_trackers.append(LoggerType.AIM)
 
-if is_mlflow_available():
-    import mlflow
+# if is_mlflow_available():
+import mlflow
 
-    _available_trackers.append(LoggerType.MLFLOW)
+_available_trackers.append(LoggerType.MLFLOW)
 
 logger = get_logger(__name__)
 
